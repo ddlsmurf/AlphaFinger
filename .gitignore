@@ -1,0 +1,22 @@
+# Swift Package Manager
+/swift/.build/
+.swiftpm/
+*.xcodeproj
+*.xcworkspace
+
+# The assembled .app
+/build/
+
+# Debug logs the app writes. These identify your ring, so they must never be
+# committed even by accident.
+/captures/
+
+# Recordings, in case the app is ever pointed at a folder inside the repo.
+*.wav
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/

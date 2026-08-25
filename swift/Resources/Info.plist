@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleName</key>            <string>AlphaFinger</string>
+  <key>CFBundleDisplayName</key>     <string>AlphaFinger</string>
+  <key>CFBundleIdentifier</key>      <string>dev.alphafinger.app</string>
+  <key>CFBundleExecutable</key>      <string>AlphaFinger</string>
+  <key>CFBundleIconFile</key>        <string>AlphaFinger</string>
+  <key>CFBundlePackageType</key>     <string>APPL</string>
+  <key>CFBundleShortVersionString</key> <string>0.1</string>
+  <key>CFBundleVersion</key>         <string>1</string>
+  <key>LSMinimumSystemVersion</key>  <string>13.0</string>
+
+  <!-- Menubar-only: no Dock icon, no main window. -->
+  <key>LSUIElement</key>             <true/>
+
+  <!-- Without this CoreBluetooth returns nothing at all, with no error: the scan
+       simply never reports a peripheral. It is the single most likely reason a
+       first run appears to do nothing. -->
+  <key>NSBluetoothAlwaysUsageDescription</key>
+  <string>AlphaFinger reads recordings from your Core Ring over Bluetooth.</string>
+</dict>
+</plist>
